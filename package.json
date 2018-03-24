@@ -1,0 +1,23 @@
+{
+  "name": "git-10x-branch",
+  "version": "1.0.0",
+  "description": "git branch on steroids, for lazy code monkeys",
+  "main": "./src/index.js",
+  "bin": "./src/bin.js",
+  "scripts": {
+    "clean": "find ./src -name '*.js' -o -name '*.js.map' -o -name '*.d.ts' | xargs rm",
+    "build": "tsc --declaration",
+    "prepack": "npm run build",
+    "start": "node ./src/bin.js"
+  },
+  "author": "Kevin Tjiam <kevin@kevincharm.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/tape": "^4.2.31",
+    "tape": "^4.9.0"
+  },
+  "dependencies": {
+    "@types/blessed": "^0.1.10",
+    "blessed": "^0.1.81"
+  }
+}
