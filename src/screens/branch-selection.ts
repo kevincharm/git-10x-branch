@@ -66,6 +66,7 @@ async function handleInput(screen: blessed.Widgets.Screen, branchSelector: Branc
                 const branch = branchSelector.getSelection()
                 const delOpt = force ? '-D' : '-d'
                 const result = await gitBranch(delOpt, branch.name)
+                exitWithMessage(screen, [...result, ''].join('\n'))
                 return true
             case 'q':
             case 'quit':
