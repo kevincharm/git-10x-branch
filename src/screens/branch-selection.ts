@@ -1,7 +1,7 @@
 import * as blessed from 'blessed'
-import frame from '../lib/frame'
-import createBody from '../lib/body'
-import BranchSelector from '../lib/branch-selector'
+import frame from '../ui/frame'
+import createBody from '../ui/body'
+import BranchSelector from '../ui/branch-selector'
 import gitBranch from '../git/git-branch'
 import gitCheckout from '../git/git-checkout'
 
