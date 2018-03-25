@@ -2,8 +2,8 @@ import * as blessed from 'blessed'
 import frame from '../lib/frame'
 import createBody from '../lib/body'
 import BranchSelector from '../lib/branch-selector'
-import gitBranch from '../lib/git-branch'
-import gitCheckout from '../lib/git-checkout'
+import gitBranch from '../git/git-branch'
+import gitCheckout from '../git/git-checkout'
 
 export default async function branchSelectionScreen() {
     const screen = blessed.screen({ smartCSR: true })
