@@ -19,7 +19,8 @@
     "@types/blessed": "^0.1.10",
     "@types/node": "^9.6.0",
     "@types/tape": "^4.2.31",
-    "tape": "^4.9.0"
+    "tape": "^4.9.0",
+    "typescript": "^3.3.3333"
   },
   "dependencies": {
     "blessed": "^0.1.81"
