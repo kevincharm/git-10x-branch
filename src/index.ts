@@ -2,7 +2,8 @@ import { spawnSync } from 'child_process'
 import branchSelectionScreen from './screens/branch-selection'
 
 export default async function main() {
-    if (process.platform === 'win32') {
+    const isGitBash = process.env.SHELL && process.env.SHELL.includes('bash')
+    if (process.platform === 'win32' && !isGitBash) {
         process.env.TERM = 'windows-ansi'
     }
 
